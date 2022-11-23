@@ -1,0 +1,83 @@
+.card {
+    background-color: white;
+    background-color: rgba(255,255,255, 0.9);
+    box-shadow: 0px 0px 30px 0 rgb(0 0 0 / 38%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.name {
+    color: #346473;
+    font-weight: 600;
+    font-size: 21px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.contents {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.card_link {
+    text-decoration: none;
+}
+
+.image_card {
+    padding-top: 15px;
+    width: 100%;
+    height: 250px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #346473;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.button span {
+    font-size: 14px;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: black;
+}
+
+.button span:hover {
+    font-weight: 600;
+    color: black;
+}
+
+.subtitles {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

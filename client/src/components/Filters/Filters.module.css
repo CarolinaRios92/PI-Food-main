@@ -1,0 +1,50 @@
+.select {
+    height: 30px;
+    width: 200px;
+    background-color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    border: 1px solid #25a55f;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.select:hover {
+    background-color: #25a55f;
+}
+
+.button {
+    width: 100px;
+    height: 33px;
+    background-color: #25a55f;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    opacity: 0.8;
+    border: 1px solid #25a55f;
+}
+
+.button_name {
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+}
+
+.button_name:hover {
+    color: black;
+    font-size: 15px;
+}
+
+.button_link {
+    text-decoration: none;
+}
+
+.form {
+    text-align: center;
+    padding-top: 20px;
+}

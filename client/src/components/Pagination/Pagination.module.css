@@ -1,0 +1,26 @@
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.number {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    opacity: 0.7;
+    border: 1px solid #25a55f;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.number:hover {
+    background-color: #25a55f;
+    color: white;
+    font-size: 16px;
+}
