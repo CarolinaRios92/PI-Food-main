@@ -308,13 +308,13 @@ const Updater = ({id, setShowUpdater}) => {
                                         key={diet}
                                         className={style.selected}>
                                             {diet}
-                                            <span
+                                            <button
                                                 id={diet}
                                                 onClick={handleRemove}
-                                                title={"Remove"}
+                                                value={diet}
                                                 className={style.x}>
                                                     X
-                                            </span>
+                                            </button>
                                     </span>
                                 ))}
                             </div>

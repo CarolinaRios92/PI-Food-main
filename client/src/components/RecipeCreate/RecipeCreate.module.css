@@ -143,6 +143,8 @@ h1 {
     padding-left: 5px;
     font-size: 15px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 .x:hover {

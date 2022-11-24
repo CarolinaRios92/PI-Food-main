@@ -22,13 +22,10 @@ router.get("/", async(req, res) => {
 router.get("/:id", async(req, res) => {
     const {id} = req.params;
     
-
     try {
-        // si el id no es un número
-        //let recipesDb = await Recipe.findall({include: [{model: Diet}]});
-
         if(isNaN(Number(id))){
-            Recipe.findByPk(id, {include: [{model: Diet}]}).then(recipeDB => {
+            Recipe.findByPk(id, {include: [{model: Diet}]})
+            .then(recipeDB => {
                 if(!recipeDB){
                     return res.status(404).send({error: "Recipe not found!"});
                 }

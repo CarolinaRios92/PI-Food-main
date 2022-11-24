@@ -137,7 +137,7 @@ const RecipeCreate = () => {
     }
 
     function handleRemove(e) {
-        const updateDiets = diets.filter((diet) => diet !== e.target.value)
+        const updateDiets = inputState.diets.filter((diet) => diet !== e.target.value)
 
         updateState("diets", updateDiets);
     }
@@ -326,13 +326,14 @@ const RecipeCreate = () => {
                                         key={diet}
                                         className={style.selected}>
                                             {diet}
-                                            <span
+                                            <button
                                                 id={diet}
                                                 onClick={handleRemove}
-                                                title={"Remove"}
+                                                value={diet}
                                                 className={style.x}>
-                                                    x
-                                            </span>
+                                                x
+                                            </button>
+                                                
                                     </span>
                                 ))}
                             </div>
