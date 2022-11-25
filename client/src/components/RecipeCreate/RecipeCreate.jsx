@@ -128,12 +128,12 @@ const RecipeCreate = () => {
     }
 
     function handleAdd(e) {
-        if(e.target.value === "select") return;
-        for(const key of diets){
-            if(key.diet === e.target.value) return;
-        }
-        updateState("diets", [...inputState.diets, e.target.value])
-        setErrors(validate({...inputState, "diets": [...inputState.diets, e.target.value]}));
+        if(!inputState.diets.includes(e.target.value)){
+            updateState("diets", [...inputState.diets, e.target.value])
+            setErrors(validate({...inputState, "diets": [...inputState.diets, e.target.value]}));
+        } else {
+            alert("Can not select the same diet again")
+        }        
     }
 
     function handleRemove(e) {

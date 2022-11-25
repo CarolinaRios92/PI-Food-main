@@ -52,9 +52,6 @@ router.post("/", async(req, res) => {
             createdInDb} = req.body;
     
     try {
-        if(!name, !summary) return res.status(404).send("name and summary are requied");
-        if(/[^a-zA-Z, ]/g.test(name)) return res.status(404).send("Name could be letters, no symbols!")
-
         const newRecipe = await Recipe.create({name, summary, healthScore, steps, image, createdInDb});
 
         let dietDb = await Diet.findAll({

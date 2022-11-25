@@ -126,4 +126,5 @@ function orderMinor(a,b) {
 function orderMajor(a,b){
     return orderMinor(b,a)
 }
+
 export default rootReducer;

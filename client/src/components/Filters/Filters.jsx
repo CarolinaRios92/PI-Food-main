@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {useSelector, useDispatch} from "react-redux";
-import {Link} from "react-router-dom";
 import {getAllRecipes, getDiets} from "../../redux/action";
 import style from "./Filters.module.css";
 
@@ -69,9 +68,7 @@ const Filters = ({
                 <button
                     className={style.button}
                     onClick={handleClick}>
-                    <Link className={style.button_link}to={"/home"}>
                         <span className={style.button_name}>RESET ALL</span>
-                    </Link>
                 </button>
             </form>
         </>

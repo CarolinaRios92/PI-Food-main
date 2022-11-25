@@ -91,7 +91,7 @@ export function getQuery(payload){
                 payload: json.data
             })
         } catch (error) {
-            return {error: error.message};            
+            return dispatch({type:"GET_QUERY", payload: error.response.data});            
         }
     }
 };
