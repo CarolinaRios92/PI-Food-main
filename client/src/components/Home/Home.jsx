@@ -90,7 +90,6 @@ const Home = () => {
                         <div className={style.loading}>
                             <img 
                                 src={loading}
-                                
                                 alt="loading page" />
                         </div>) 
                         : <div className={style.error404}>{allRecipes}</div>
